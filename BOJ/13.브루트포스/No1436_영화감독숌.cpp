@@ -1,0 +1,44 @@
+/*
+문제 : 666,1666,2666,3666 이렇게 제목을짓는다
+입력 : 숫자 N(10000보다 작거나 같은 자연수)
+출력 : N번째영화의 제목에 들어간 수
+
+[예제]
+입력) 2 
+출력) 1666
+*/
+#include <iostream>
+#include <vector>
+#include <string>
+
+using namespace std;
+int main() {
+	int N=0;
+	int res = 666;
+	int cnt = 0;
+	cin >> N;
+	vector<int> v;
+	vector<string> v2;
+	/*for (int i = 0;; i++) {
+		int num = i;
+		while (num != 0) {
+			if (num % 10 == 6) cnt++;
+			else if (cnt >= 3) break;
+			else cnt = 0;
+			num/= 10;
+		}
+		if(cnt>=3) v.push_back(i);
+		if (v.size() == N) break;
+		cnt = 0;
+	}*/
+	//s.find 가 있다... 
+	for (int i = 0;; i++) {
+		string s = to_string(i);
+		if (s.find("666")!=-1) v2.push_back(s);
+		//find 의 반환값 : 첫글자가 나온 index. 찾지못하면 -1
+		if (v2.size() == N) break;
+	}
+	cout << v2[N - 1];
+
+	return 0;
+}
