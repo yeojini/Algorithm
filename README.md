@@ -1,6 +1,6 @@
 # Algorithm Study by *Yeogenius*
 ## BOJ 단계별 풀이
-08. 문자열
+08. 문자열 [Github](https://github.com/yeojini/Algorithm/tree/master/BOJ/8.%EB%AC%B8%EC%9E%90%EC%97%B4)
 10. 재귀
 11. 브루트포스
 13. 백트래킹
