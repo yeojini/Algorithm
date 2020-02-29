@@ -1,4 +1,4 @@
-# Algorithm Study by **Yeogenius**
+# Algorithm Study by *Yeogenius*
 ## BOJ 단계별 풀이
 - 08. 문자열
 - 10. 재귀
