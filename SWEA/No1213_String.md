@@ -9,41 +9,35 @@
 # 2. 코드
 ```
     #include<iostream>
-    #include <string>
-    #include <vector>
-    
-    using namespace std;
-    
-    int main(int argc, char** argv)
-    {
-    	int test_case;
-    	int T, tc;
-    	cin >> T;
-    	string S, s;
-    	vector<int> results;
-    	for (test_case = 1; test_case <= T; ++test_case)
-    	{
-    		cin >> tc;
-    		cin >> s;
-    		cin >> S;
-    		int result = 0;
-    		int nidx = 0;
-    		//있다면
-    
-    		while (S.find(s, nidx) != -1) {
-    			nidx = S.find(s, nidx) + s.size();
-    			result++;
-    		}
-    		
-    		results.push_back(result);
-    
-    	}
-    	for (test_case = 1; test_case <= T; ++test_case) {
-    		cout << "#" << test_case << " " << results[test_case-1]<<"\n";
-    	}
-    	
-    	return 0;
-    }
+#include <string>
+#include <vector>
+
+using namespace std;
+
+int main(int argc, char** argv)
+{
+	string S, s;
+	for (int test_case = 1; test_case <= 10; ++test_case)
+	{
+        int tc;
+		cin >> tc;
+		cin >> s;
+		cin >> S;
+		int result = 0;
+		int nidx = 0;
+		//있다면
+
+		while (S.find(s, nidx) != -1) {
+			nidx = S.find(s, nidx) + s.size();
+			result++;
+		}
+		
+		cout << "#" << test_case << " " << result<<"\n";
+
+	}
+
+	return 0;
+}
 ```
 
 # 3. 피드백
