@@ -1,7 +1,7 @@
 # Algorithm Study by *Yeogenius*
 ## BOJ 단계별 풀이
 08. [문자열](https://github.com/yeojini/Algorithm/tree/master/BOJ/8.%EB%AC%B8%EC%9E%90%EC%97%B4)
-10. 재귀
+10. [재귀](https://github.com/yeojini/Algorithm/tree/master/BOJ/11.%EC%9E%AC%EA%B7%80)
 11. 브루트포스
 13. 백트래킹
 14. 동적 계획법
