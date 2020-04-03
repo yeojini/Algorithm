@@ -15,6 +15,5 @@ vector<int> solution(int brown, int red) {
             answer.push_back(height);
         }
     }
-    
     return answer;
 }
