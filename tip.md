@@ -8,7 +8,7 @@
 
 # 처리 시간 빠르게
 
-```c
+```cpp
 ios_base::sync_with_stdio(false);
 cout.tie(NULL);
 cin.tie(NULL);
@@ -16,7 +16,7 @@ cin.tie(NULL);
 
 # 소수점 지정
 
-```c
+```cpp
 
 cout.setf(ios::fixed);
 cout.precision(6);
@@ -79,5 +79,32 @@ for (int z = 0; z < 4; z++) {
     			int ny = y + dy[z];
     			if (nx < 0 || ny < 0 || nx >= 16 || ny >= 16) continue;
           //~구현~
+}
+```
+
+# 16진수 -> 10진수
+```cpp
+int toDec(string str) {
+	int num = 0;
+	int sum = 0;
+	int start = 1;
+	for (int i = 1; i < str.size();i++) {
+		start *= 16;
+	}
+
+	for (int i = 0; i <str.size(); i++) {
+		
+		if (str[i] >= '0' && str[i] <= '9') {
+			num = (str[i] - 48);
+		}
+		else {
+			num = (str[i] - 55);
+		}
+		sum += num*start;
+		start = start / 16;
+		
+	}
+	return sum;
+
 }
 ```
