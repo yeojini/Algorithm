@@ -1,0 +1,40 @@
+# 문제
+백준 BOJ 2606번 바이러스
+# 풀이
+
+# 코드
+```cpp
+#include <vector>
+#include <algorithm>
+#include <iostream>
+using namespace std;
+bool check[101];
+vector<int> a[101];
+int cnt = 0;
+
+void dfs(int x) {
+	if (check[x]) return;
+	check[x] = true;
+	for (int i = 0; i < a[x].size(); i++) {
+		int y = a[x][i];
+		if (!check[y]) cnt++;
+		dfs(y);
+	}
+}
+
+int main() {
+	int n,m ;//n:컴퓨터 개수, m:연결된 컴퓨터 쌍의 수
+	cin >> n>>m;
+	for (int i = 0; i < m ; i++) {
+		int u, v;
+		cin >> u >>v;
+		a[u].push_back(v); //양방향 간선이니까 각각 넣어줌
+		a[v].push_back(u);
+	}
+
+	dfs(1); //1번 컴퓨터가 바이러스 걸렸을 때
+	cout << cnt;
+
+}
+
+```
