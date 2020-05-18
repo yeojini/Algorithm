@@ -21,7 +21,6 @@ void dfs(int x) {
 		dfs(y);
 	}
 }
-
 int main() {
 	int n,m ;//n:컴퓨터 개수, m:연결된 컴퓨터 쌍의 수
 	cin >> n>>m;
