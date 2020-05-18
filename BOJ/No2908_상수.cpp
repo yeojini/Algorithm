@@ -1,9 +1,9 @@
-/*
-¹®Á¦ : A,B ¸¦ °Å²Ù·Î Àû°í ±× Áß Å« ¼ö¸¦Ãâ·ÂÇØ¶ó
-ÀÔ·Â : °°Áö¾ÊÀº ¼¼ÀÚ¸® ¼ö A,B. 0 Æ÷ÇÔ X 
+# ë¬¸ì œ
+ë¬¸ì œ : A,B ë¥¼ ê±°ê¾¸ë¡œ ì ê³  ê·¸ ì¤‘ í° ìˆ˜ë¥¼ì¶œë ¥í•´ë¼
+ìž…ë ¥ : ê°™ì§€ì•Šì€ ì„¸ìžë¦¬ ìˆ˜ A,B. 0 í¬í•¨ X 
 
-*/
-
+# ì½”ë“œ
+```cpp
 #include <iostream>
 #include <vector>
 #include <string>
@@ -47,3 +47,4 @@ int main() {
 	
 	return 0;
 }
+```
