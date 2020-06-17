@@ -1,5 +1,5 @@
 # Algorithm Study by *Yeogenius*
-## BOJ 단계별 풀이
+## BOJ
 
 ## SWEA
 
