@@ -101,8 +101,7 @@ int toDec(string str) {
 			num = (str[i] - 55);
 		}
 		sum += num*start;
-		start = start / 16;
-		
+		start = start / 16;	
 	}
 	return sum;
 
